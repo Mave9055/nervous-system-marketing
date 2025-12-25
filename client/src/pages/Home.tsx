@@ -592,6 +592,97 @@ export default function Home() {
       {/* Section Divider */}
       <div className="section-divider" />
 
+      {/* FAQ Section */}
+      <section className="py-24 gradient-subtle">
+        <div className="container space-y-16">
+          <div className="max-w-3xl">
+            <h2 className="text-5xl md:text-6xl font-serif font-bold mb-8 text-balance tracking-tight">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Questions about the book, seminar, and how they fit into your life or practice.
+            </p>
+          </div>
+
+          <div className="space-y-8 max-w-4xl">
+            {/* FAQ 1 */}
+            <div className="space-y-4">
+              <h3 className="text-2xl font-serif font-semibold">Is this book for trauma survivors only?</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm">
+                No. While the book speaks directly to trauma survivors, it is also essential reading for anyone working with trauma—clinicians, educators, parents, and organizational leaders. If you have ever wondered why your body will not relax, why you struggle with anxiety, or why you reach for maladaptive coping strategies, this book explains the why behind it all. Many readers without diagnosed trauma find it deeply resonant.
+              </p>
+            </div>
+
+            {/* FAQ 2 */}
+            <div className="space-y-4">
+              <h3 className="text-2xl font-serif font-semibold">Can I teach the seminar without formal training in trauma?</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm">
+                Yes. The seminar is designed to be taught by educators, clinicians, trainers, and even motivated facilitators without formal trauma credentials. It includes complete instructions, discussion prompts, activity guidance, and a full transcript. That said, if you are working with actively traumatized populations, some clinical training is recommended. For general audiences, educators, or organizational settings, the seminar stands alone.
+              </p>
+            </div>
+
+            {/* FAQ 3 */}
+            <div className="space-y-4">
+              <h3 className="text-2xl font-serif font-semibold">How is this different from other trauma books?</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm">
+                This work bridges lived experience, neurobiology, and systemic critique. It is not just theory—it is a survival story told backwards, grounded in Polyvagal Theory and the Window of Tolerance framework. The five-act structure creates a narrative arc that explains both the damage and the path forward. Many readers say it is the first book that made them feel understood rather than pathologized.
+              </p>
+            </div>
+
+            {/* FAQ 4 */}
+            <div className="space-y-4">
+              <h3 className="text-2xl font-serif font-semibold">What is included in the seminar package?</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm">
+                The complete 90-minute seminar includes: full transcript, detailed activity instructions for all six thematic parts, discussion prompts for each section, breakout group scenarios, role-play guidance, key terms study guide, reflection questions, and post-seminar assignments. You can teach it verbatim or adapt it to your audience. All materials are ready to use immediately.
+              </p>
+            </div>
+
+            {/* FAQ 5 */}
+            <div className="space-y-4">
+              <h3 className="text-2xl font-serif font-semibold">Is this appropriate for diverse audiences?</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm">
+                Yes. The seminar is designed to be trauma-informed and culturally responsive. It acknowledges systemic trauma, intergenerational impact, and the intersection of nervous system dysregulation with marginalization. The book speaks to individual experience while the seminar includes discussion prompts that invite systemic analysis. Both are appropriate for clinical settings, academic courses, community organizations, and corporate training.
+              </p>
+            </div>
+
+            {/* FAQ 6 */}
+            <div className="space-y-4">
+              <h3 className="text-2xl font-serif font-semibold">How long does it take to read the book?</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm">
+                Most readers complete the book in 4-6 hours of focused reading. However, many choose to read it slowly, chapter by chapter, allowing time for reflection and integration. Some readers revisit sections multiple times. The pace depends on your engagement with the material and whether you are reading for personal insight or professional preparation.
+              </p>
+            </div>
+
+            {/* FAQ 7 */}
+            <div className="space-y-4">
+              <h3 className="text-2xl font-serif font-semibold">Can I use this in my therapy practice or training program?</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm">
+                Absolutely. Many therapists recommend the book to clients as psychoeducation. Many training programs integrate the seminar into their curriculum. The framework is evidence-based and practical. If you are using it in a clinical or educational setting, we recommend reviewing the content with your team first to ensure it aligns with your approach.
+              </p>
+            </div>
+
+            {/* FAQ 8 */}
+            <div className="space-y-4">
+              <h3 className="text-2xl font-serif font-semibold">What if I am triggered by the content?</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm">
+                The book and seminar are trauma-informed but do address difficult topics: medical trauma, domestic violence, addiction, and survival responses. If you are actively in crisis or early in your healing journey, consider reading with a therapist support or in a facilitated group. The seminar includes guidance for facilitators on creating psychological safety and offering opt-out options for triggering activities.
+              </p>
+            </div>
+
+            {/* FAQ 9 */}
+            <div className="space-y-4">
+              <h3 className="text-2xl font-serif font-semibold">Is there a refund policy?</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm">
+                Please contact us directly with questions about refunds or returns. We stand behind the quality of both the book and seminar, and we are happy to discuss your needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section Divider */}
+      <div className="section-divider" />
+
       {/* CTA Section */}
       <section className="py-24">
         <div className="container max-w-3xl text-center space-y-12">
