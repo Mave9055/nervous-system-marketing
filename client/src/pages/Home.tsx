@@ -43,7 +43,7 @@ export default function Home() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/images/hero-banner.png')",
+            backgroundImage: `url(${import.meta.env.BASE_URL}images/hero-banner.png)`,
             opacity: 0.5,
           }}
         />
@@ -77,7 +77,7 @@ export default function Home() {
           <div className="hidden md:block relative">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/8 to-accent/8 rounded-sm" />
             <img
-              src="/images/section-healing.png"
+              src={`${import.meta.env.BASE_URL}images/section-healing.png`}
               alt="Healing and growth"
               className="w-full h-auto rounded-sm shadow-premium-lg"
             />
@@ -145,7 +145,7 @@ export default function Home() {
         <div className="container grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div className="order-2 md:order-1">
             <img
-              src="/images/section-wiring.png"
+              src={`${import.meta.env.BASE_URL}images/section-wiring.png`}
               alt="Early nervous system wiring"
               className="w-full h-auto rounded-sm shadow-premium-lg"
             />
