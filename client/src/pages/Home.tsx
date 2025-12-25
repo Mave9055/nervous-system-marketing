@@ -391,6 +391,124 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Section Divider */}
+      <div className="section-divider" />
+
+      {/* Testimonials Section */}
+      <section className="py-20 bg-gradient-to-b from-background to-muted/20">
+        <div className="container space-y-16">
+          <div className="max-w-3xl">
+            <h2 className="text-4xl md:text-5xl mb-6 text-balance">
+              Voices of Healing & Recognition
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Readers, clinicians, and educators share how this work has shifted their understanding of trauma, dysregulation, and recovery.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Testimonial 1: Reader */}
+            <div className="bg-card rounded-lg p-8 border border-border hover:shadow-lg transition-shadow">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-sm font-semibold text-primary">JM</span>
+                </div>
+                <div>
+                  <h4 className="font-semibold">Jennifer M.</h4>
+                  <p className="text-sm text-muted-foreground">Reader, Trauma Survivor</p>
+                </div>
+              </div>
+              <blockquote className="text-muted-foreground leading-relaxed italic">
+                "I've been in therapy for years, but this book finally explained why my body won't relax. Reading about the Glass Box Blueprint—the NICU isolation—felt like someone was describing my entire life. For the first time, I don't feel broken. I feel adapted. That shift changed everything."
+              </blockquote>
+            </div>
+
+            {/* Testimonial 2: Clinician */}
+            <div className="bg-card rounded-lg p-8 border border-border hover:shadow-lg transition-shadow">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-sm font-semibold text-accent">DR</span>
+                </div>
+                <div>
+                  <h4 className="font-semibold">Dr. Rachel Torres</h4>
+                  <p className="text-sm text-muted-foreground">Licensed Clinical Psychologist</p>
+                </div>
+              </div>
+              <blockquote className="text-muted-foreground leading-relaxed italic">
+                "The seminar is exceptional. My students finally understand why trauma isn't just a memory problem—it's a nervous system problem. The case study approach makes Polyvagal Theory accessible without dumbing it down. I've already taught it twice and plan to make it annual."
+              </blockquote>
+            </div>
+
+            {/* Testimonial 3: Reader */}
+            <div className="bg-card rounded-lg p-8 border border-border hover:shadow-lg transition-shadow">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-sm font-semibold text-primary">MC</span>
+                </div>
+                <div>
+                  <h4 className="font-semibold">Marcus C.</h4>
+                  <p className="text-sm text-muted-foreground">Reader, In Recovery</p>
+                </div>
+              </div>
+              <blockquote className="text-muted-foreground leading-relaxed italic">
+                "The chapter on addiction as regulation stopped me cold. I've been sober for three years, but I never understood that my drinking wasn't about pleasure—it was about turning down the volume. This reframe has transformed how I work with my sponsor and my therapist."
+              </blockquote>
+            </div>
+
+            {/* Testimonial 4: Educator */}
+            <div className="bg-card rounded-lg p-8 border border-border hover:shadow-lg transition-shadow">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-sm font-semibold text-accent">SK</span>
+                </div>
+                <div>
+                  <h4 className="font-semibold">Sophia K.</h4>
+                  <p className="text-sm text-muted-foreground">Social Work Educator, University</p>
+                </div>
+              </div>
+              <blockquote className="text-muted-foreground leading-relaxed italic">
+                "I've taught trauma for fifteen years. This seminar is the most integrated approach I've seen—it bridges neurobiology, lived experience, and systemic critique. My students leave understanding not just the theory, but the humanity behind it."
+              </blockquote>
+            </div>
+
+            {/* Testimonial 5: Reader */}
+            <div className="bg-card rounded-lg p-8 border border-border hover:shadow-lg transition-shadow">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-sm font-semibold text-primary">AH</span>
+                </div>
+                <div>
+                  <h4 className="font-semibold">Amanda H.</h4>
+                  <p className="text-sm text-muted-foreground">Reader, Parent & Therapist</p>
+                </div>
+              </div>
+              <blockquote className="text-muted-foreground leading-relaxed italic">
+                "As a parent working through my own trauma, this book gave me language for what I see in my kids—and permission to heal without shame. The chapter on parenting from dysregulation was devastating and liberating at once."
+              </blockquote>
+            </div>
+
+            {/* Testimonial 6: Clinician */}
+            <div className="bg-card rounded-lg p-8 border border-border hover:shadow-lg transition-shadow">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-sm font-semibold text-accent">JL</span>
+                </div>
+                <div>
+                  <h4 className="font-semibold">James L.</h4>
+                  <p className="text-sm text-muted-foreground">Addiction Counselor, Treatment Center</p>
+                </div>
+              </div>
+              <blockquote className="text-muted-foreground leading-relaxed italic">
+                "We've integrated this framework into our treatment program. Clients finally understand their addiction isn't a moral failure—it's a nervous system seeking regulation. Recovery rates have improved because shame has decreased."
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section Divider */}
+      <div className="section-divider" />
+
       {/* Footer */}
       <footer className="bg-muted/30 border-t border-border py-12">
         <div className="container">
