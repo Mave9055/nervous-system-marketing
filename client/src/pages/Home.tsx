@@ -1,81 +1,85 @@
+import { ArrowRight, BookOpen, Users, Brain, Leaf, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, BookOpen, Users, Brain, Leaf } from "lucide-react";
 
 /**
- * Somatic Minimalism Design Philosophy:
- * - Warm stone (cream, taupe) + forest green + terracotta palette
- * - Generous whitespace and asymmetric layouts
- * - Gentle animations that support nervous system regulation
- * - Typography: Crimson Text (serif, elegant) + Inter (sans-serif, readable)
- * - Tactile quality through subtle textures and organic dividers
+ * Ivy League Masterclass Design Philosophy:
+ * - Academic elegance with refined typography hierarchy (Crimson Text serif + Inter sans-serif)
+ * - Deep forest green (#2d5a47), burgundy (#6b3e2e), ivory (#fefcf8) palette
+ * - Premium whitespace and intentional breathing room
+ * - Sophisticated color use and refined visual hierarchy
+ * - Subtle depth through refined shadows and refined borders
+ * - Refined interactions without visual noise
+ * - Letter-spacing and kerning for typographic refinement
  */
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
-        <div className="container py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Brain className="w-6 h-6 text-primary" />
-            <span className="font-semibold text-lg">From the Storm to the Fire</span>
+      {/* Navigation - Refined */}
+      <nav className="sticky top-0 z-50 bg-background/98 backdrop-blur-md border-b border-border/30">
+        <div className="container py-5 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <div className="w-8 h-8 rounded-sm bg-primary flex items-center justify-center">
+              <Brain className="w-5 h-5 text-primary-foreground" />
+            </div>
+            <span className="font-serif text-lg font-semibold tracking-tight">From the Storm to the Fire</span>
           </div>
-          <div className="flex gap-4">
-            <Button variant="ghost" size="sm">
+          <div className="flex gap-6 items-center">
+            <button className="text-sm font-sans font-medium hover-subtle">
               About
-            </Button>
-            <Button variant="ghost" size="sm">
+            </button>
+            <button className="text-sm font-sans font-medium hover-subtle">
               Seminar
-            </Button>
-            <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90">
+            </button>
+            <Button className="btn-primary text-sm">
               Learn More
             </Button>
           </div>
         </div>
       </nav>
 
-      {/* Hero Section */}
+      {/* Hero Section - Refined */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage: "url('/images/hero-banner.png')",
-            opacity: 0.6,
+            opacity: 0.5,
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-transparent" />
 
-        <div className="container relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center py-20">
-          <div className="space-y-8">
-            <div className="space-y-4">
-              <h1 className="text-5xl md:text-6xl leading-tight text-balance">
+        <div className="container relative z-10 grid grid-cols-1 md:grid-cols-2 gap-16 items-center py-24">
+          <div className="space-y-10">
+            <div className="space-y-6">
+              <h1 className="text-6xl md:text-7xl font-serif font-bold leading-tight text-balance tracking-tight">
                 From the Storm to the Fire
               </h1>
-              <p className="text-xl text-muted-foreground leading-relaxed">
+              <p className="text-xl font-serif italic text-muted-foreground leading-relaxed max-w-lg">
                 A survival story told backwards: from damage → meaning → agency.
               </p>
             </div>
 
-            <p className="text-lg leading-relaxed max-w-lg">
+            <p className="text-lg leading-relaxed max-w-lg text-muted-foreground">
               Understand how early trauma shapes the nervous system, why survival strategies become self-destructive, and how healing actually happens—through grounded, embodied recovery.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+            <div className="flex flex-col sm:flex-row gap-5 pt-6">
+              <Button className="btn-primary">
                 Explore the Book <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
-              <Button size="lg" variant="outline">
+              <Button className="btn-secondary">
                 View the Seminar
               </Button>
             </div>
           </div>
 
           <div className="hidden md:block relative">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg" />
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/8 to-accent/8 rounded-sm" />
             <img
               src="/images/section-healing.png"
               alt="Healing and growth"
-              className="w-full h-auto rounded-lg shadow-lg"
+              className="w-full h-auto rounded-sm shadow-premium-lg"
             />
           </div>
         </div>
@@ -85,47 +89,47 @@ export default function Home() {
       <div className="section-divider" />
 
       {/* The Problem: Nervous System Dysregulation */}
-      <section className="py-20 bg-gradient-to-b from-background to-muted/20">
-        <div className="container space-y-12">
+      <section className="py-24 gradient-subtle">
+        <div className="container space-y-16">
           <div className="max-w-3xl">
-            <h2 className="text-4xl md:text-5xl mb-6 text-balance">
+            <h2 className="text-5xl md:text-6xl font-serif font-bold mb-8 text-balance tracking-tight">
               The Body Keeps the Score
             </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
               When trauma happens early—whether through medical isolation, domestic violence, or other overwhelming experiences—the nervous system learns to stay on high alert. It becomes dysregulated: caught between hyperarousal (fight-or-flight) and hypoarousal (freeze-or-shutdown). This isn't a choice. It's physiology.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {/* Card 1: Early Wiring */}
-            <div className="bg-card rounded-lg p-8 border border-border hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4">
+            <div className="card-premium space-y-4">
+              <div className="w-12 h-12 bg-primary/12 rounded-sm flex items-center justify-center">
                 <Brain className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">Early Wiring</h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <h3 className="text-2xl font-serif font-semibold">Early Wiring</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm">
                 The first years shape the nervous system's baseline. NICU isolation, domestic violence, or medical trauma create a "Glass Box Blueprint"—a system wired for danger even when safe.
               </p>
             </div>
 
             {/* Card 2: Hyperarousal */}
-            <div className="bg-card rounded-lg p-8 border border-border hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center mb-4">
+            <div className="card-premium space-y-4">
+              <div className="w-12 h-12 bg-accent/12 rounded-sm flex items-center justify-center">
                 <Users className="w-6 h-6 text-accent" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">Hyperarousal</h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <h3 className="text-2xl font-serif font-semibold">Hyperarousal</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm">
                 Chronic anxiety, panic attacks, irritability, and the "fawn response"—people-pleasing masquerading as compliance. The body stays in fight-or-flight, exhausting itself.
               </p>
             </div>
 
             {/* Card 3: Maladaptive Coping */}
-            <div className="bg-card rounded-lg p-8 border border-border hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4">
+            <div className="card-premium space-y-4">
+              <div className="w-12 h-12 bg-primary/12 rounded-sm flex items-center justify-center">
                 <Leaf className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">Maladaptive Coping</h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <h3 className="text-2xl font-serif font-semibold">Maladaptive Coping</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm">
                 Addiction, workaholism, and isolation become regulation strategies. Not because of weakness, but because the dysregulated nervous system desperately seeks relief.
               </p>
             </div>
@@ -137,66 +141,70 @@ export default function Home() {
       <div className="section-divider" />
 
       {/* The Book: From the Storm to the Fire */}
-      <section className="py-20">
-        <div className="container grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <section className="py-24">
+        <div className="container grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div className="order-2 md:order-1">
             <img
               src="/images/section-wiring.png"
               alt="Early nervous system wiring"
-              className="w-full h-auto rounded-lg shadow-lg"
+              className="w-full h-auto rounded-sm shadow-premium-lg"
             />
           </div>
 
-          <div className="order-1 md:order-2 space-y-8">
+          <div className="order-1 md:order-2 space-y-10">
             <div className="space-y-4">
-              <h2 className="text-4xl md:text-5xl text-balance">
+              <h2 className="text-5xl md:text-6xl font-serif font-bold text-balance tracking-tight">
                 A Memoir That Explains Everything
               </h2>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg font-serif italic text-muted-foreground">
                 This isn't just a survival story. It's a map.
               </p>
             </div>
 
             <div className="space-y-6">
+              {/* Act I */}
               <div className="space-y-2">
-                <h3 className="font-semibold text-lg">Act I: The Wiring</h3>
-                <p className="text-muted-foreground">
+                <h4 className="font-serif text-xl font-semibold">Act I: The Wiring</h4>
+                <p className="text-muted-foreground leading-relaxed text-sm">
                   NICU isolation, domestic violence, and early trauma that shaped a nervous system wired for survival.
                 </p>
               </div>
 
+              {/* Act II */}
               <div className="space-y-2">
-                <h3 className="font-semibold text-lg">Act II: The Fire</h3>
-                <p className="text-muted-foreground">
+                <h4 className="font-serif text-xl font-semibold">Act II: The Fire</h4>
+                <p className="text-muted-foreground leading-relaxed text-sm">
                   How survival strategies—addiction, hypervigilance, chaotic relationships—became self-destructive patterns.
                 </p>
               </div>
 
+              {/* Act III */}
               <div className="space-y-2">
-                <h3 className="font-semibold text-lg">Act III: The Map</h3>
-                <p className="text-muted-foreground">
+                <h4 className="font-serif text-xl font-semibold">Act III: The Map</h4>
+                <p className="text-muted-foreground leading-relaxed text-sm">
                   Understanding Polyvagal Theory, the Window of Tolerance, and why symptoms aren't the root cause.
                 </p>
               </div>
 
+              {/* Act IV */}
               <div className="space-y-2">
-                <h3 className="font-semibold text-lg">Act IV: The Cost</h3>
-                <p className="text-muted-foreground">
+                <h4 className="font-serif text-xl font-semibold">Act IV: The Cost</h4>
+                <p className="text-muted-foreground leading-relaxed text-sm">
                   The quiet grief of lost years, lost identity, and the loneliness beneath the noise.
                 </p>
               </div>
 
+              {/* Act V */}
               <div className="space-y-2">
-                <h3 className="font-semibold text-lg">Act V: The Ember</h3>
-                <p className="text-muted-foreground">
+                <h4 className="font-serif text-xl font-semibold">Act V: The Ember</h4>
+                <p className="text-muted-foreground leading-relaxed text-sm">
                   Grounded healing—not toxic hope, but real footing. Still burning, still here.
                 </p>
               </div>
             </div>
 
-            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
-              <BookOpen className="w-4 h-4 mr-2" />
-              Get the Book
+            <Button className="btn-primary">
+              Get the Book <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
           </div>
         </div>
@@ -206,64 +214,64 @@ export default function Home() {
       <div className="section-divider" />
 
       {/* The Seminar */}
-      <section className="py-20 bg-gradient-to-b from-background to-muted/20">
-        <div className="container space-y-12">
+      <section className="py-24 gradient-subtle">
+        <div className="container space-y-16">
           <div className="max-w-3xl">
-            <h2 className="text-4xl md:text-5xl mb-6 text-balance">
-              Harvard-Style Seminar: 90 Minutes of Interactive Learning
+            <h2 className="text-5xl md:text-6xl font-serif font-bold mb-8 text-balance tracking-tight">
+              Harvard-Style Seminar
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              A complete, ready-to-deliver seminar for educators, clinicians, and trainers. Structured with lecture bursts, discussion prompts, breakout activities, role-plays, and reflections.
+              90 minutes of interactive learning. A complete, ready-to-deliver seminar for educators, clinicians, and trainers. Structured with lecture bursts, discussion prompts, breakout activities, role-plays, and reflections.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {/* Seminar Feature 1 */}
-            <div className="space-y-4">
-              <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center">
+            <div className="card-premium space-y-4">
+              <div className="w-12 h-12 bg-primary/12 rounded-sm flex items-center justify-center">
                 <Brain className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-2xl font-semibold">Six Thematic Parts</h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <h3 className="text-2xl font-serif font-semibold">Six Thematic Parts</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm">
                 Early wiring, hyperarousal, hypoarousal, addiction as regulation, relationships, and healing. Each part includes lecture, activity, and integrated discussion.
               </p>
             </div>
 
             {/* Seminar Feature 2 */}
-            <div className="space-y-4">
-              <div className="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center">
+            <div className="card-premium space-y-4">
+              <div className="w-12 h-12 bg-accent/12 rounded-sm flex items-center justify-center">
                 <Users className="w-6 h-6 text-accent" />
               </div>
-              <h3 className="text-2xl font-semibold">Interactive Format</h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <h3 className="text-2xl font-serif font-semibold">Interactive Format</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm">
                 Breakout groups, role-plays, debates, and reflective writing. Students don't just learn—they wrestle with concepts through embodied practice.
               </p>
             </div>
 
             {/* Seminar Feature 3 */}
-            <div className="space-y-4">
-              <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center">
+            <div className="card-premium space-y-4">
+              <div className="w-12 h-12 bg-primary/12 rounded-sm flex items-center justify-center">
                 <BookOpen className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-2xl font-semibold">Complete Package</h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <h3 className="text-2xl font-serif font-semibold">Complete Package</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm">
                 Full transcript, activity instructions, discussion prompts, key terms study guide, and assignments. Drop it into any classroom or training setting.
               </p>
             </div>
 
             {/* Seminar Feature 4 */}
-            <div className="space-y-4">
-              <div className="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center">
+            <div className="card-premium space-y-4">
+              <div className="w-12 h-12 bg-accent/12 rounded-sm flex items-center justify-center">
                 <Leaf className="w-6 h-6 text-accent" />
               </div>
-              <h3 className="text-2xl font-semibold">Trauma-Informed</h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <h3 className="text-2xl font-serif font-semibold">Trauma-Informed</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm">
                 Grounded in Polyvagal Theory, the Window of Tolerance, and somatic practices. Teaches both neurobiology and systemic critique.
               </p>
             </div>
           </div>
 
-          <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+          <Button className="btn-primary">
             Access the Seminar <ArrowRight className="w-4 h-4 ml-2" />
           </Button>
         </div>
@@ -272,58 +280,155 @@ export default function Home() {
       {/* Section Divider */}
       <div className="section-divider" />
 
+      {/* Learning Objectives Section */}
+      <section className="py-24">
+        <div className="container space-y-16">
+          <div className="max-w-3xl">
+            <h2 className="text-5xl md:text-6xl font-serif font-bold mb-8 text-balance tracking-tight">
+              What Participants Will Learn
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              By the end of this 90-minute seminar, participants will be able to:
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Objective 1 */}
+            <div className="card-premium space-y-4">
+              <div className="flex gap-4">
+                <div className="badge-number flex-shrink-0">1</div>
+                <div className="space-y-2">
+                  <h4 className="font-serif text-lg font-semibold">Understand Nervous System Basics</h4>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    Grasp how the vagus nerve regulates survival states and why early trauma creates dysregulation that persists into adulthood.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Objective 2 */}
+            <div className="card-premium space-y-4">
+              <div className="flex gap-4">
+                <div className="badge-number-accent flex-shrink-0">2</div>
+                <div className="space-y-2">
+                  <h4 className="font-serif text-lg font-semibold">Recognize Dysregulation Patterns</h4>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    Identify hyperarousal, hypoarousal, and freeze responses in clients, students, or themselves—and understand the physiology behind each.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Objective 3 */}
+            <div className="card-premium space-y-4">
+              <div className="flex gap-4">
+                <div className="badge-number flex-shrink-0">3</div>
+                <div className="space-y-2">
+                  <h4 className="font-serif text-lg font-semibold">Reframe Addiction & Coping</h4>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    Shift from shame-based narratives to understanding addiction, workaholism, and isolation as nervous system regulation attempts.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Objective 4 */}
+            <div className="card-premium space-y-4">
+              <div className="flex gap-4">
+                <div className="badge-number-accent flex-shrink-0">4</div>
+                <div className="space-y-2">
+                  <h4 className="font-serif text-lg font-semibold">Apply the Window of Tolerance</h4>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    Use this framework to assess clients' capacity for stress and design interventions that expand their window rather than push beyond it.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Objective 5 */}
+            <div className="card-premium space-y-4">
+              <div className="flex gap-4">
+                <div className="badge-number flex-shrink-0">5</div>
+                <div className="space-y-2">
+                  <h4 className="font-serif text-lg font-semibold">Integrate Somatic Practices</h4>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    Understand why talk therapy alone is insufficient and how embodied practices support real nervous system healing.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Objective 6 */}
+            <div className="card-premium space-y-4">
+              <div className="flex gap-4">
+                <div className="badge-number-accent flex-shrink-0">6</div>
+                <div className="space-y-2">
+                  <h4 className="font-serif text-lg font-semibold">Teach with Confidence</h4>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    Leave with a complete, ready-to-deliver framework for teaching trauma and dysregulation to any audience—from clinicians to community groups.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section Divider */}
+      <div className="section-divider" />
+
       {/* Key Concepts */}
-      <section className="py-20">
-        <div className="container space-y-12">
-          <h2 className="text-4xl md:text-5xl text-balance">
+      <section className="py-24 gradient-subtle">
+        <div className="container space-y-16">
+          <h2 className="text-5xl md:text-6xl font-serif font-bold text-balance tracking-tight">
             Key Concepts You'll Understand
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {/* Concept 1 */}
-            <div className="bg-card rounded-lg p-8 border border-border">
-              <h3 className="text-xl font-semibold mb-3">Polyvagal Theory</h3>
-              <p className="text-muted-foreground leading-relaxed">
+            <div className="space-y-3">
+              <h3 className="text-2xl font-serif font-semibold">Polyvagal Theory</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm">
                 How the vagus nerve regulates survival states: ventral vagal (safety and social engagement), sympathetic (fight-or-flight), and dorsal vagal (collapse/shutdown).
               </p>
             </div>
 
             {/* Concept 2 */}
-            <div className="bg-card rounded-lg p-8 border border-border">
-              <h3 className="text-xl font-semibold mb-3">Window of Tolerance</h3>
-              <p className="text-muted-foreground leading-relaxed">
+            <div className="space-y-3">
+              <h3 className="text-2xl font-serif font-semibold">Window of Tolerance</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm">
                 The optimal zone where we can manage stress. Trauma shrinks this window, leaving people vulnerable to extreme swings between hyperarousal and hypoarousal.
               </p>
             </div>
 
             {/* Concept 3 */}
-            <div className="bg-card rounded-lg p-8 border border-border">
-              <h3 className="text-xl font-semibold mb-3">Nervous System Dysregulation</h3>
-              <p className="text-muted-foreground leading-relaxed">
+            <div className="space-y-3">
+              <h3 className="text-2xl font-serif font-semibold">Nervous System Dysregulation</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm">
                 The chronic state where the body remains locked in survival mode—hypervigilant, anxious, or shut down—even when the threat has passed.
               </p>
             </div>
 
             {/* Concept 4 */}
-            <div className="bg-card rounded-lg p-8 border border-border">
-              <h3 className="text-xl font-semibold mb-3">Addiction as Regulation</h3>
-              <p className="text-muted-foreground leading-relaxed">
+            <div className="space-y-3">
+              <h3 className="text-2xl font-serif font-semibold">Addiction as Regulation</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm">
                 Addiction isn't the primary problem—it's a desperate attempt to regulate an overwhelmed nervous system. Understanding this shifts treatment and stigma.
               </p>
             </div>
 
             {/* Concept 5 */}
-            <div className="bg-card rounded-lg p-8 border border-border">
-              <h3 className="text-xl font-semibold mb-3">Embodied Trauma</h3>
-              <p className="text-muted-foreground leading-relaxed">
+            <div className="space-y-3">
+              <h3 className="text-2xl font-serif font-semibold">Embodied Trauma</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm">
                 The body learns and remembers before the mind. Sleep paralysis, bedwetting, sensory overload, and hypervigilance are physiological, not psychological failures.
               </p>
             </div>
 
             {/* Concept 6 */}
-            <div className="bg-card rounded-lg p-8 border border-border">
-              <h3 className="text-xl font-semibold mb-3">Healing Through Regulation</h3>
-              <p className="text-muted-foreground leading-relaxed">
+            <div className="space-y-3">
+              <h3 className="text-2xl font-serif font-semibold">Healing Through Regulation</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm">
                 Recovery happens through somatic practices, co-regulation, and neuroplasticity—not just insight. The body must feel safe before the mind can heal.
               </p>
             </div>
@@ -335,30 +440,33 @@ export default function Home() {
       <div className="section-divider" />
 
       {/* Who This Is For */}
-      <section className="py-20 bg-gradient-to-b from-background to-muted/20">
-        <div className="container space-y-12">
-          <h2 className="text-4xl md:text-5xl text-balance">
+      <section className="py-24">
+        <div className="container space-y-16">
+          <h2 className="text-5xl md:text-6xl font-serif font-bold text-balance tracking-tight">
             Who This Is For
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+            {/* Readers & Survivors */}
             <div className="space-y-4">
-              <h3 className="text-xl font-semibold">Readers & Survivors</h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <h3 className="text-2xl font-serif font-semibold">Readers & Survivors</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm">
                 If you've felt "off" your whole life, struggled with anxiety or addiction, or wondered why your body won't relax—this book explains why and shows you a path forward.
               </p>
             </div>
 
+            {/* Educators & Clinicians */}
             <div className="space-y-4">
-              <h3 className="text-xl font-semibold">Educators & Clinicians</h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <h3 className="text-2xl font-serif font-semibold">Educators & Clinicians</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm">
                 The seminar is ready to teach. Use it in psychology courses, trauma training, social work programs, or clinical settings. Complete with activities and discussion prompts.
               </p>
             </div>
 
+            {/* Organizations & Trainers */}
             <div className="space-y-4">
-              <h3 className="text-xl font-semibold">Organizations & Trainers</h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <h3 className="text-2xl font-serif font-semibold">Organizations & Trainers</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm">
                 Deliver trauma-informed training to your team. The seminar is structured, evidence-based, and designed for real engagement—not passive learning.
               </p>
             </div>
@@ -369,36 +477,11 @@ export default function Home() {
       {/* Section Divider */}
       <div className="section-divider" />
 
-      {/* CTA Section */}
-      <section className="py-20">
-        <div className="container max-w-3xl text-center space-y-8">
-          <h2 className="text-4xl md:text-5xl text-balance">
-            Ready to Understand the Body's Wisdom?
-          </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            The body keeps the score—but healing is possible. Start with the book, teach with the seminar, or both.
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
-              <BookOpen className="w-4 h-4 mr-2" />
-              Get the Book
-            </Button>
-            <Button size="lg" variant="outline">
-              Access the Seminar
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Section Divider */}
-      <div className="section-divider" />
-
       {/* Testimonials Section */}
-      <section className="py-20 bg-gradient-to-b from-background to-muted/20">
+      <section className="py-24 gradient-subtle">
         <div className="container space-y-16">
           <div className="max-w-3xl">
-            <h2 className="text-4xl md:text-5xl mb-6 text-balance">
+            <h2 className="text-5xl md:text-6xl font-serif font-bold mb-6 text-balance tracking-tight">
               Voices of Healing & Recognition
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
@@ -406,101 +489,101 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Testimonial 1: Reader */}
-            <div className="bg-card rounded-lg p-8 border border-border hover:shadow-lg transition-shadow">
-              <div className="flex items-start gap-4 mb-4">
-                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-sm font-semibold text-primary">JM</span>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            {/* Testimonial 1 */}
+            <div className="card-premium space-y-4">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-full bg-primary/15 flex items-center justify-center flex-shrink-0 font-serif font-bold text-primary">
+                  JM
                 </div>
-                <div>
-                  <h4 className="font-semibold">Jennifer M.</h4>
-                  <p className="text-sm text-muted-foreground">Reader, Trauma Survivor</p>
+                <div className="space-y-1">
+                  <h4 className="font-serif font-semibold">Jennifer M.</h4>
+                  <p className="text-xs text-muted-foreground">Reader, Trauma Survivor</p>
                 </div>
               </div>
-              <blockquote className="text-muted-foreground leading-relaxed italic">
+              <p className="text-muted-foreground leading-relaxed text-sm italic">
                 "I've been in therapy for years, but this book finally explained why my body won't relax. Reading about the Glass Box Blueprint—the NICU isolation—felt like someone was describing my entire life. For the first time, I don't feel broken. I feel adapted. That shift changed everything."
-              </blockquote>
+              </p>
             </div>
 
-            {/* Testimonial 2: Clinician */}
-            <div className="bg-card rounded-lg p-8 border border-border hover:shadow-lg transition-shadow">
-              <div className="flex items-start gap-4 mb-4">
-                <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-sm font-semibold text-accent">DR</span>
+            {/* Testimonial 2 */}
+            <div className="card-premium space-y-4">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-full bg-accent/15 flex items-center justify-center flex-shrink-0 font-serif font-bold text-accent">
+                  DR
                 </div>
-                <div>
-                  <h4 className="font-semibold">Dr. Rachel Torres</h4>
-                  <p className="text-sm text-muted-foreground">Licensed Clinical Psychologist</p>
+                <div className="space-y-1">
+                  <h4 className="font-serif font-semibold">Dr. Rachel Torres</h4>
+                  <p className="text-xs text-muted-foreground">Licensed Clinical Psychologist</p>
                 </div>
               </div>
-              <blockquote className="text-muted-foreground leading-relaxed italic">
+              <p className="text-muted-foreground leading-relaxed text-sm italic">
                 "The seminar is exceptional. My students finally understand why trauma isn't just a memory problem—it's a nervous system problem. The case study approach makes Polyvagal Theory accessible without dumbing it down. I've already taught it twice and plan to make it annual."
-              </blockquote>
+              </p>
             </div>
 
-            {/* Testimonial 3: Reader */}
-            <div className="bg-card rounded-lg p-8 border border-border hover:shadow-lg transition-shadow">
-              <div className="flex items-start gap-4 mb-4">
-                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-sm font-semibold text-primary">MC</span>
+            {/* Testimonial 3 */}
+            <div className="card-premium space-y-4">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-full bg-primary/15 flex items-center justify-center flex-shrink-0 font-serif font-bold text-primary">
+                  MC
                 </div>
-                <div>
-                  <h4 className="font-semibold">Marcus C.</h4>
-                  <p className="text-sm text-muted-foreground">Reader, In Recovery</p>
+                <div className="space-y-1">
+                  <h4 className="font-serif font-semibold">Marcus C.</h4>
+                  <p className="text-xs text-muted-foreground">Reader, In Recovery</p>
                 </div>
               </div>
-              <blockquote className="text-muted-foreground leading-relaxed italic">
+              <p className="text-muted-foreground leading-relaxed text-sm italic">
                 "The chapter on addiction as regulation stopped me cold. I've been sober for three years, but I never understood that my drinking wasn't about pleasure—it was about turning down the volume. This reframe has transformed how I work with my sponsor and my therapist."
-              </blockquote>
+              </p>
             </div>
 
-            {/* Testimonial 4: Educator */}
-            <div className="bg-card rounded-lg p-8 border border-border hover:shadow-lg transition-shadow">
-              <div className="flex items-start gap-4 mb-4">
-                <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-sm font-semibold text-accent">SK</span>
+            {/* Testimonial 4 */}
+            <div className="card-premium space-y-4">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-full bg-accent/15 flex items-center justify-center flex-shrink-0 font-serif font-bold text-accent">
+                  SK
                 </div>
-                <div>
-                  <h4 className="font-semibold">Sophia K.</h4>
-                  <p className="text-sm text-muted-foreground">Social Work Educator, University</p>
+                <div className="space-y-1">
+                  <h4 className="font-serif font-semibold">Sophia K.</h4>
+                  <p className="text-xs text-muted-foreground">Social Work Educator, University</p>
                 </div>
               </div>
-              <blockquote className="text-muted-foreground leading-relaxed italic">
+              <p className="text-muted-foreground leading-relaxed text-sm italic">
                 "I've taught trauma for fifteen years. This seminar is the most integrated approach I've seen—it bridges neurobiology, lived experience, and systemic critique. My students leave understanding not just the theory, but the humanity behind it."
-              </blockquote>
+              </p>
             </div>
 
-            {/* Testimonial 5: Reader */}
-            <div className="bg-card rounded-lg p-8 border border-border hover:shadow-lg transition-shadow">
-              <div className="flex items-start gap-4 mb-4">
-                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-sm font-semibold text-primary">AH</span>
+            {/* Testimonial 5 */}
+            <div className="card-premium space-y-4">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-full bg-primary/15 flex items-center justify-center flex-shrink-0 font-serif font-bold text-primary">
+                  AH
                 </div>
-                <div>
-                  <h4 className="font-semibold">Amanda H.</h4>
-                  <p className="text-sm text-muted-foreground">Reader, Parent & Therapist</p>
+                <div className="space-y-1">
+                  <h4 className="font-serif font-semibold">Amanda H.</h4>
+                  <p className="text-xs text-muted-foreground">Reader, Parent & Therapist</p>
                 </div>
               </div>
-              <blockquote className="text-muted-foreground leading-relaxed italic">
+              <p className="text-muted-foreground leading-relaxed text-sm italic">
                 "As a parent working through my own trauma, this book gave me language for what I see in my kids—and permission to heal without shame. The chapter on parenting from dysregulation was devastating and liberating at once."
-              </blockquote>
+              </p>
             </div>
 
-            {/* Testimonial 6: Clinician */}
-            <div className="bg-card rounded-lg p-8 border border-border hover:shadow-lg transition-shadow">
-              <div className="flex items-start gap-4 mb-4">
-                <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-sm font-semibold text-accent">JL</span>
+            {/* Testimonial 6 */}
+            <div className="card-premium space-y-4">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-full bg-accent/15 flex items-center justify-center flex-shrink-0 font-serif font-bold text-accent">
+                  JL
                 </div>
-                <div>
-                  <h4 className="font-semibold">James L.</h4>
-                  <p className="text-sm text-muted-foreground">Addiction Counselor, Treatment Center</p>
+                <div className="space-y-1">
+                  <h4 className="font-serif font-semibold">James L.</h4>
+                  <p className="text-xs text-muted-foreground">Addiction Counselor, Treatment Center</p>
                 </div>
               </div>
-              <blockquote className="text-muted-foreground leading-relaxed italic">
+              <p className="text-muted-foreground leading-relaxed text-sm italic">
                 "We've integrated this framework into our treatment program. Clients finally understand their addiction isn't a moral failure—it's a nervous system seeking regulation. Recovery rates have improved because shame has decreased."
-              </blockquote>
+              </p>
             </div>
           </div>
         </div>
@@ -509,36 +592,77 @@ export default function Home() {
       {/* Section Divider */}
       <div className="section-divider" />
 
+      {/* CTA Section */}
+      <section className="py-24">
+        <div className="container max-w-3xl text-center space-y-12">
+          <div className="space-y-6">
+            <h2 className="text-5xl md:text-6xl font-serif font-bold text-balance tracking-tight">
+              Ready to Understand the Body's Wisdom?
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              The body keeps the score—but healing is possible. Start with the book, teach with the seminar, or both.
+            </p>
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-5 justify-center">
+            <Button className="btn-primary">
+              Get the Book <ArrowRight className="w-4 h-4 ml-2" />
+            </Button>
+            <Button className="btn-secondary">
+              Access the Seminar
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
-      <footer className="bg-muted/30 border-t border-border py-12">
+      <footer className="border-t border-border/30 bg-gradient-to-b from-background to-muted/10 py-16">
         <div className="container">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-            <div className="space-y-2">
-              <h4 className="font-semibold">About</h4>
-              <p className="text-sm text-muted-foreground">
-                Resources for understanding nervous system dysregulation and healing.
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+            <div className="space-y-4">
+              <div className="flex items-center gap-2">
+                <div className="w-6 h-6 rounded-sm bg-primary flex items-center justify-center">
+                  <Brain className="w-4 h-4 text-primary-foreground" />
+                </div>
+                <span className="font-serif font-semibold">From the Storm to the Fire</span>
+              </div>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                A survival story told backwards. Understanding trauma, dysregulation, and healing.
               </p>
             </div>
 
-            <div className="space-y-2">
-              <h4 className="font-semibold">Resources</h4>
-              <ul className="text-sm text-muted-foreground space-y-1">
-                <li><a href="#" className="hover:text-foreground transition">The Book</a></li>
-                <li><a href="#" className="hover:text-foreground transition">The Seminar</a></li>
-                <li><a href="#" className="hover:text-foreground transition">Key Concepts</a></li>
+            <div className="space-y-4">
+              <h4 className="font-serif font-semibold">The Book</h4>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><a href="#" className="hover-subtle">Overview</a></li>
+                <li><a href="#" className="hover-subtle">Five Acts</a></li>
+                <li><a href="#" className="hover-subtle">Get the Book</a></li>
               </ul>
             </div>
 
-            <div className="space-y-2">
-              <h4 className="font-semibold">Contact</h4>
-              <p className="text-sm text-muted-foreground">
-                Questions? Reach out to learn more.
-              </p>
+            <div className="space-y-4">
+              <h4 className="font-serif font-semibold">The Seminar</h4>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><a href="#" className="hover-subtle">Overview</a></li>
+                <li><a href="#" className="hover-subtle">Learning Objectives</a></li>
+                <li><a href="#" className="hover-subtle">Access Seminar</a></li>
+              </ul>
+            </div>
+
+            <div className="space-y-4">
+              <h4 className="font-serif font-semibold">Resources</h4>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><a href="#" className="hover-subtle">Key Concepts</a></li>
+                <li><a href="#" className="hover-subtle">Testimonials</a></li>
+                <li><a href="#" className="hover-subtle">Contact</a></li>
+              </ul>
             </div>
           </div>
 
-          <div className="border-t border-border pt-8 text-center text-sm text-muted-foreground">
-            <p>&copy; 2025 From the Storm to the Fire. All rights reserved.</p>
+          <div className="border-t border-border/30 pt-8">
+            <p className="text-center text-sm text-muted-foreground">
+              © 2025 From the Storm to the Fire. All rights reserved.
+            </p>
           </div>
         </div>
       </footer>
